@@ -37,7 +37,7 @@ const InterviewSetup: React.FC<Props> = ({ onStart }) => {
               required
               value={role}
               onChange={(e) => setRole(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-white text-gray-900"
               placeholder="e.g. AI Engineer, Product Manager"
             />
           </div>
@@ -48,7 +48,7 @@ const InterviewSetup: React.FC<Props> = ({ onStart }) => {
               <select
                 value={experienceLevel}
                 onChange={(e) => setExperienceLevel(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white text-gray-900"
               >
                 <option value="Intern">Intern</option>
                 <option value="Junior">Junior (0-2 yrs)</option>
@@ -63,7 +63,7 @@ const InterviewSetup: React.FC<Props> = ({ onStart }) => {
               <select
                 value={round}
                 onChange={(e) => setRound(e.target.value as InterviewRound)}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white text-gray-900"
               >
                 {Object.values(InterviewRound).map((r) => (
                   <option key={r} value={r}>{r}</option>
@@ -78,7 +78,7 @@ const InterviewSetup: React.FC<Props> = ({ onStart }) => {
               type="text"
               value={focusArea}
               onChange={(e) => setFocusArea(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none transition bg-white text-gray-900"
               placeholder="e.g. React hooks, Transformer architecture"
             />
           </div>
