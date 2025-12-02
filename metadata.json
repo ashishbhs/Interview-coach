@@ -1,0 +1,7 @@
+{
+  "name": "InterView Coach AI",
+  "description": "A comprehensive AI-powered interview simulation coach for various technical domains and rounds using Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
